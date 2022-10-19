@@ -35,8 +35,6 @@ const App = () => {
     }
   }
 
-  console.log(searchList);
-
   // reset the search value and list if dropdown is closed
   useEffect(() => {
     if (!open) {
@@ -51,10 +49,8 @@ const App = () => {
     .then((rawData) => rawData.json())
     .then((jsonData) => setStockData(jsonData.data));
     }
-    console.log(stockData);
   }, [selectedValue]);
 
-    
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />

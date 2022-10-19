@@ -4,7 +4,6 @@ import Grid from '@mui/material/Grid';
 import Tooltip from '@mui/material/Tooltip';
 
 const Stock = ({data}) => {
-    console.log("data",data);
     const {ticker, name, exchange_short, price, day_change} = data[0];
 
     return (
